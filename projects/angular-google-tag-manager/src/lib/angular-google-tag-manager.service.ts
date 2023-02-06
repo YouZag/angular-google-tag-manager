@@ -96,6 +96,10 @@ export class GoogleTagManagerService {
       doc.head.insertBefore(gtmScript, doc.head.firstChild);
     });
   }
+  
+  public clearDataLayer() {
+    console.log("we can clear the layer, Drew");
+  }
 
   public pushTag(item: object): Promise<void> {
     return new Promise<void>((resolve, reject) => {
